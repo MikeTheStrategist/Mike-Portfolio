@@ -5,7 +5,7 @@
     font-family: Poppins;
 }
 
-.nav-menu{
+/* .nav-menu{
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -17,33 +17,490 @@
 }
 .nav{
     background-color: #101011;
+} */
+.navcolor{
+    background-color:#101010;
+    /* border: 2px solid red; */
+}
+.navbar{
+    box-shadow: 0 2px 8px rgba(255,255,255,0.08);
+}
+.header{
+    background-color: #0b0b0b;
 }
 
-.intro{
-    background-image: linear-gradient(to right, #101011 50%), url(./images/Mike\ Portrait.png);
-    height: 94vh;
+.hero{
+    background-color: #0b0b0b;
+}
+.hero-contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
     position: relative;
+    height: 500px;
 }
-.intro img{
-    position: absolute;
-    right: 150px;
-    top: -40px;
-    z-index: 1;
-}
-.intro h1{
-    font-weight: 700;
-    font-size: 70px;
-    color: white;
-    position: absolute;
-    top: 200px;
-    left: 240px;
-    z-index: 2;
-}
-.intro p{
+.hero-name{
+    font-size: 18px;
     font-weight: 400;
-    font-size: 32px;
     color: white;
+}
+.hero-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.hero-description{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+.hero-image .image1{
+    border-radius: 20px;
+}
+.btn-primary{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #576183;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.btn-secondary{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #576183;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.hero-buttons{
+    gap: 2em;
+}
+@media(max-width:1200px){
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 70px;
+    }
+    .my-portrait{
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+    }
+    /* .about-heading{
+        text-align: center;
+        width: 80%;
+
+    } */
+    .services-container{
+        flex-direction: column;
+    }
+    .services-header{
+        /* align-content: center;
+        width: 95%; */
+        border: 2px solid red;
+        padding: 20%;
+    }
+}
+@media(max-width:800px){
+.about-leftside p{
+    font-size: 8px;
+    font-weight: 200;
+    width: 60%;
+    margin-left: 70px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.left-question{
+    color: #6A779D;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 60%;
+    margin: auto;
+}
+.left-answer{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 60%;
+    margin: auto;
+}
+.section-line h4{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.social-tags{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.line{
+    width: 80px;
+    height: 2px;
+    background-color: gray;
+    /* margin-bottom: 30px; */
+    position: relative;
+    top: 15px;
+}
+.section-breakerline{
+    display: none;
+    }
+
+.personal-info{
+    grid-template-columns:1fr;
+}
+.personal-info p{
+    margin:0;
+}
+}
+
+.personal-info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px 40px;
+}
+.navbar-nav a{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+.navbar-brand{
+    color: white;
+    font-weight: 500;
+}
+
+@media(max-width:800px){
+    .hero-contain{
+        flex-direction: column-reverse;
+        height: 700px;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .hero-text{
+        text-align: center;
+    }
+}
+
+.about-section{
+    width: 80%;
+    margin: auto;
+    color: white;
+    
+}
+.about-me{
+    background-color: #0b0b0b;
+    padding: 20px;
+    
+}
+.about-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-section p{
+     font-weight: 400;
+     font-size: 15px;
+     color: #9F9F9F;
+}
+.heading-main{
+     font-weight: 700;
+     font-size: 46px;
+     color: white;
+}
+.about-content{
+    display: flex;
+    gap: 3em;
+    width: 80%;
+    margin: auto;
+}
+.my-portrait{
+    border: 2px solid black;
+    padding: 5px;
+}
+.about-content p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.about-leftside{
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: white;
+}
+.left-question{
+    color: #6A779D;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.left-answer{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.section-line{
+    display: flex;
+    gap: 8em;
+    margin-bottom: 20px;
+}
+.section-line h4{
+    font-size: 15px;
+    font-weight: 400;
+}
+.social-tags{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.line{
+    width: 80px;
+    height: 2px;
+    background-color: gray;
+    margin-bottom: 30px;
+    position: relative;
+    top: 15px;
+}
+.btn-download{
+    /* border: 2px solid red; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #576183;
+    color: white;
+    text-decoration: none;
+    
+}
+.fa-brands{
+    /* background-color: white; */
+}
+.section-breakerline{
+    width: 700px;
+    height: 2px;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.service-card{
+    width: 300px;
+    height: 320px;
+    /* border: 2px solid red; */
+    font-size: 14px;
+    font-weight: 400;
+    /* color: #9F9F9F; */
+    background-color: #161616;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px #161616;
+}
+.services-container{
+    display: flex;
+    gap: 3em;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+.services-header{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.services-subtitle{
+     font-weight: 400;
+     font-size: 15px;
+     color: #9F9F9F;
+}
+.services-title{
+     font-weight: 600;
+     font-size: 32px;
+     color: white;
+}
+.service-icon{
+   color: #576183;
+   font-size: 58px;
+   margin-bottom: 10px;
+}
+.service-card h3{
+    font-size: 20px;
+    font-weight: 500px;
+    color: white;
+    margin-bottom: 10px;
+}
+.service-card p{
+    font-size: 14px;
+    font-weight: 200px;
+    color: #9F9F9F;
+}
+
+.Services{
+    background-color: #0b0b0b;
+}
+/* ===== RESUME SECTION ===== */
+
+.resume-section{
+    padding: 80px 10%;
+    background: #0b0b0b;
+    color: #fff;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 32px;
+    margin: 10px 0;
+    color: white;
+}
+
+.section-line{
+    width: 40px;
+    height: 3px;
+    background: #576183;
+    margin: auto;
+}
+
+
+.resume-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+.resume-heading{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.resume-item{
+    position: relative;
+    padding: 25px 25px 25px 40px;
+    background: #111;
+    margin-bottom: 20px;
+    border-left: 2px solid #576183;
+}
+
+
+.resume-item::before{
+    content: "";
     position: absolute;
-    top: 300px;
-    left: 450px;
+    left: -7px;
+    top: 28px;
+    width: 12px;
+    height: 12px;
+    background: #576183;
+    border-radius: 50%;
+}
+
+
+.resume-item h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.resume-date{
+    font-size: 13px;
+    color: #576183;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.resume-item p{
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px){
+
+    .resume-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+#testimonialCarousel{
+    padding: 80px 0;
+    background: #0b0b0b;
+}
+
+
+/* TESTIMONIAL CARD */
+
+.Testimonial{
+    background-color: #0b0b0b;
+}
+
+.testimonial-card{
+    background:#111;
+    padding:35px 40px;
+    border-radius:8px;
+    max-width:650px;
+    margin:auto;
+    color:#ddd;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+.client-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:18px;
+}
+
+
+.client-info img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #576183;
+}
+
+.client-info h4{
+    font-size:16px;
+    margin:0;
+    color:#fff;
+}
+
+.client-info span{
+    font-size:13px;
+    color:#aaa;
+}
+
+.testimonial-card p{
+    font-size:14px;
+    line-height:1.7;
+    color:#bbb;
+}
+
+.carousel-item{
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-indicators{
+    bottom:-50px;
+}
+
+.carousel-indicators button{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#666;
+}
+
+.carousel-indicators .active{
+    background:;
 }
