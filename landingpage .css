@@ -189,7 +189,7 @@
 }
 
 .about-section{
-    width: 80%;
+    width: 90%;
     margin: auto;
     color: white;
     
@@ -297,9 +297,10 @@
 }
 .services-container{
     display: flex;
+    justify-content: space-around;
     gap: 3em;
     padding: 30px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .services-header{
